@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="39acfe78-f4d2-4984-a929-d4dfd236c6b8" activeEnvironment="Default" name="POST microservice" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="1aa20519-5c50-4dc3-ba69-a0aea0709e4c" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:9200" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:9200</con:endpoint></con:endpoints><con:resource name="fakultet" path="/fakultet" id="118bb2be-ab6e-4a0e-92b5-c66315c8a075"><con:settings/><con:parameters/><con:method name="1" id="b2803ecd-6a25-4861-bea5-f49db431f682" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="411c51c3-7dc4-4cfe-8bea-8cae9a907d11" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request>{
+"id": 341,
+"naziv": "Filozofski fakultet",
+"sediste": "Novi Sad"
+}</con:request><con:originalUri>http://localhost/fakultet</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="departman" path="/departman" id="dab0be00-9a94-4cca-94e9-af75e1b3002e"><con:settings/><con:parameters/><con:method name="Method 1" id="c53f5f04-0df7-4d31-9c7e-d272f4c5c5bd" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="04e85086-554d-499f-89d5-cddc39ba7542" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request>{
+	"id": 132,
+	"naziv": "Sociologija",
+	"oznaka": "SOC",
+	"fakultetBean": {
+		"id": -43,
+		"naziv": "Filozofski fakultet",
+		"sediste": "Novi Sad"
+	}
+}</con:request><con:originalUri>http://localhost/departman</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="status" path="/status" id="00f8ffc2-e217-47ca-9465-d62bddbe2ee9"><con:settings/><con:parameters/><con:method name="Method 1" id="13a9c404-edc5-451b-8448-7ba9330ca65c" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="68588a91-d3ae-4e29-b87c-fc2d360ed0aa" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request>{
+"id": 341,
+"naziv": "Apsolvent",
+"oznaka": "APSOL"
+}</con:request><con:originalUri>http://localhost/status</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="student" path="/student" id="ef7740ab-997e-44f2-8a8a-46775f271701"><con:settings/><con:parameters/><con:method name="Method 1" id="c48eae67-1ccc-4d36-9d01-8bb0863c7618" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="b1a6bf0b-b39b-48c9-8bd4-ba0faba55bac" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request>{
+	"id": 1456,
+	"brIndexa": "IT39/15",
+	"ime": "Sanja",
+	"prezime": "Ilic",
+	"departmanBean": {
+	"id": 6,
+	"naziv": "Industrijsko inzenjerstvo i menadzment",
+	"oznaka": "IIS",
+	"fakultetBean": {
+		"id": 1,
+		"naziv": "Fakultet tehnickih nauka",
+		"sediste": "Novi Sad"
+	}
+	},
+	"statusBean": {
+		"id": 4,
+		"naziv": "Student cetvrte godine",
+		"oznaka": "ScG"
+	}
+}</con:request><con:originalUri>http://localhost/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

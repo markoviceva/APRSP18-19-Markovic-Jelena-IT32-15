@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="777d237a-ff19-4940-8837-dad62fa6ba1b" activeEnvironment="Default" name="PUT microservice" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="6bbf3ad2-ca50-41f2-aaf1-6a5b0468d9e8" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:9300" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:9300</con:endpoint></con:endpoints><con:resource name="fakultet" path="/fakultet" id="1860524c-1e46-402e-bae1-e49ca8517d70"><con:settings/><con:parameters/><con:method name="1" id="cfdf726f-3e47-4b80-a329-886a03965c29" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="211f8c4c-9061-4a18-90b8-2e62fbdf7d25" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>{
+	"id": -43,
+	"naziv": "Filozofski fakultet",
+	"sediste": "Novi Sad"
+}</con:request><con:originalUri>http://localhost/fakultet</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="departman" path="/departman" id="836b434e-8247-45c1-858d-7ba33a40634b"><con:settings/><con:parameters/><con:method name="Method 1" id="78c6481e-b091-45bb-b8ef-3f1303c24f39" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="398d8b50-8e2a-42ae-b5e3-d1fda4d086ff" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>{
+	"id": 1,
+	"naziv": "Biologija",
+	"oznaka": "BLG",
+	"fakultetBean": {
+		"id": 4,
+		"naziv": "Prirodno-Matematicki fakultet",
+		"sediste": "Novi Sad"
+	}
+}</con:request><con:originalUri>http://localhost/departman</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="status" path="/status" id="87a48bb9-a524-44be-9591-3cf4ced42c2b"><con:settings/><con:parameters/><con:method name="Method 1" id="c1c4781c-8634-412f-8752-902951691dc6" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="5ac5b173-8203-4197-a288-95373833c307" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>{
+	"id": 4,
+	"naziv": "Student cetvrte godine",
+	"oznaka": "SCG"
+}</con:request><con:originalUri>http://localhost/status</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="student" path="/student" id="19f51f6a-7ad4-4121-a4e2-0f19a024d503"><con:settings/><con:parameters/><con:method name="Method 1" id="304243db-f419-407a-b1b2-5b1e4081bd83" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="3db06281-4bb5-4e1c-8e98-4c2b25be09ea" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>{
+	"id": 6,
+	"brIndexa": "IT32/15",
+	"ime": "Sanja",
+	"prezime": "Matovic",
+	"departmanBean": {
+	"id": 1,
+	"naziv": "Biologija",
+	"oznaka": "BIO",
+	"fakultetBean": {
+		"id": 4,
+		"naziv": "Prirodno-Matematicki fakultet",
+		"sediste": "Novi Sad"
+		}
+	},
+	"statusBean": {
+		"id": 4,
+		"naziv": "Student cetvrte godine",
+		"oznaka": "ScG"
+		}
+}</con:request><con:originalUri>http://localhost/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
